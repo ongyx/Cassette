@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/library_item"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/library_item_border"
+    android:backgroundTint="@color/purple_700"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+    android:gravity="center"
+    android:longClickable="true"
+    android:outlineProvider="background">
+
+    <ImageView
+        android:id="@+id/library_cover"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home" />
+
+    <TextView
+        android:id="@+id/library_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:gravity="center|start|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="TextView"
+        android:textAlignment="gravity"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+</LinearLayout>
