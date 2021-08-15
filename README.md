@@ -1,6 +1,12 @@
 # Cassette
 
+<img width="256" height="256" src="./app/src/main/ic_launcher-playstore.png">
+
 Clean and simple music player for Android.
+
+## Features
+
+TODO
 
 ## Building
 

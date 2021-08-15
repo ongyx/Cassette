@@ -43,7 +43,7 @@ public class Playlist implements Serializable {
     }
 
     public void sync() {
-        Paper.book().write(this.checksum, this);
+        Paper.book().write(checksum, this);
     }
 
     // Get the playlist cover (first song's cover).

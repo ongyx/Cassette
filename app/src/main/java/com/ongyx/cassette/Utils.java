@@ -1,7 +1,6 @@
 package com.ongyx.cassette;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.SparseArray;
@@ -44,8 +43,6 @@ public class Utils {
     static final Gson gson = new Gson();
 
     static OkHttpClient client = new OkHttpClient();
-
-    public static MediaPlayer player = new MediaPlayer();
 
     public static File filesDir;
 

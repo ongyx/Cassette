@@ -78,14 +78,14 @@
         android:layout_height="48dp"
         android:layout_marginTop="527dp"
         android:background="#00FFFFFF"
-        android:onClick="playOrPauseSong"
+        android:onClick="playOrPause"
         android:scaleType="fitXY"
         android:src="@drawable/ic_pause"
-        app:tint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#000000" />
 
     <ImageButton
         android:id="@+id/player_prev"
@@ -94,12 +94,12 @@
         android:layout_marginTop="527dp"
         android:layout_marginEnd="32dp"
         android:background="@android:color/transparent"
-        android:onClick="playPrevSong"
+        android:onClick="skipBackward"
         android:scaleType="fitXY"
         android:src="@drawable/ic_skip_back"
-        app:tint="#000000"
         app:layout_constraintEnd_toStartOf="@+id/player_pause"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#000000" />
 
     <ImageButton
         android:id="@+id/player_repeat"
@@ -124,12 +124,12 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="527dp"
         android:background="@android:color/transparent"
-        android:onClick="playNextSong"
+        android:onClick="skipForward"
         android:scaleType="fitXY"
         android:src="@drawable/ic_skip_forward"
-        app:tint="#000000"
         app:layout_constraintStart_toEndOf="@+id/player_pause"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#000000" />
 
     <ImageButton
         android:id="@+id/player_menu"
